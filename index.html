@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Audio</title>
+</head>
+<body>
+  <h1>Welcome to My Webpage</h1>
+  <p>Enjoy the background music!</p>
+
+  <!-- Audio Element -->
+  <audio id="background-audio" src="2024-11-08_13-45-39_AUTC.mp3" preload="auto" loop></audio>
+
+  <!-- Button to play audio -->
+  <button id="play-button">Play Music</button>
+
+  <script>
+    // JavaScript to play audio on button click
+    const audio = document.getElementById('background-audio');
+    const playButton = document.getElementById('play-button');
+
+    playButton.addEventListener('click', () => {
+      audio.play().catch(error => {
+        console.log("Audio playback failed:", error);
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--  <title>Background Audio</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <h1>Welcome to My Webpage</h1>-->
+<!--  <p>Enjoy the background music!</p>-->
+
+<!--  &lt;!&ndash; Audio Element &ndash;&gt;-->
+<!--  <audio id="background-audio" src="2024-11-08_13-45-39_AUTC.mp3" preload="auto" loop></audio>-->
+
+<!--  <script>-->
+<!--    // JavaScript to play audio automatically on page load-->
+<!--    const audio = document.getElementById('background-audio');-->
+
+<!--    window.addEventListener('load', () => {-->
+<!--      audio.play().catch(error => {-->
+<!--        console.log("Audio playback failed:", error);-->
+<!--      });-->
+<!--    });-->
+<!--  </script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--chat gpt-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Auto-Play Audio with JavaScript</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Welcome to My Web Page</h1>-->
+<!--    <audio id="myAudio">-->
+<!--        <source src="2024-11-08_13-45-39_AUTC.mp3" type="audio/mpeg">-->
+<!--        Your browser does not support the audio element.-->
+<!--    </audio>-->
+
+<!--    <script>-->
+<!--        // Wait for the DOM to fully load-->
+<!--        window.addEventListener('load', () => {-->
+<!--            const audio = document.getElementById('myAudio');-->
+
+<!--            // Attempt to play the audio-->
+<!--            audio.play()-->
+<!--                .then(() => {-->
+<!--                    console.log('Audio is playing');-->
+<!--                })-->
+<!--                .catch(error => {-->
+<!--                    console.warn('Audio autoplay was blocked by the browser:', error);-->
+<!--                });-->
+<!--        });-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Auto-Play Audio</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Welcome to My Web Page</h1>-->
+<!--    <audio id="aud" loop="loop">-->
+<!--        <source src="2024-11-08_13-45-39_AUTC.mp3" type="audio/mpeg">-->
+<!--        Your browser does not support the audio element.-->
+<!--    </audio>-->
+
+<!--    <script>-->
+<!--    document.addEventListener("DOMContentLoaded", function () {-->
+<!--        const audio = document.getElementById("aud");-->
+
+<!--        if (audio) {-->
+<!--            audio.play().catch(error => {-->
+<!--                console.log("Audio playback failed:", error);-->
+<!--                // Optionally, you can inform the user or provide a button to play the audio-->
+<!--            });-->
+<!--        } else {-->
+<!--            console.log("Audio element not found.");-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
